@@ -1,0 +1,42 @@
+
+* { /* Reseta as configurações */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex; /* Escolha do display flexbox */
+    flex-direction: column; /* Modelo do display */
+    align-items: center; /* Alinhamento dos itens */
+    justify-content: center; /* Modelo secundário do display */
+    height: 100vh; /* Largura */
+    background-color: #f0f0f0;
+}
+header { /* Cabeçalho */
+    text-align: center; /* Alinhamento do texto */
+    margin-bottom: 20px; /* Final da margem */
+}
+.card-container { /* Estilo do card */
+    display: flex; /* Escolha do display */
+    gap: 20px; /* Espaçamento entre um card e outro */
+}
+.card {
+    width: 100px; /* Largura do card */
+    height: 150px; /* Altura */
+    background-color: #007bff; /* Cor do card */
+    color: white; /* Cor do texto dentro do card */
+    font-size: 2rem; /* Tamanho da fonte */
+    display: flex; /* Escolha do display em flexbox */
+    align-items: center; /* Alinhamento dos itens na flexbox */
+    justify-content: center; /* Modelo de display flex */
+    border-radius: 10px; /* Insersão de borda radial */
+    cursor: pointer; /* Ponteiro como "mãozinha" */
+    transition: background-color 0.3s ease; 
+    /* Efeito de mudança de cor */
+}
+
+.card:active { /* Cor do efeito será apenas ao clicar */
+    background-color: #003c7c; 
+}
+

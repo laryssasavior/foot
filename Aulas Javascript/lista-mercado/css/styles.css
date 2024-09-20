@@ -1,0 +1,62 @@
+/* Reseta as configuraçõe do navegador */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Define o estilo da página */
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+/* Estiliza o contêiner central */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Estilo dos campos de input e botões */
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin: 5px; 
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px; /* Espaçamento entre os itens */
+    margin: 10px; /* Margem */ 
+    background-color: #28a745; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+/* Estilos da tabela */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Permitirá a borda da tabela ausente */
+    text-align: left;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+table tr:hover {
+    background-color: aquamarine;
+}
+/* Oculta elementos inicialmente */
+.oculto {
+    display: none;
+}

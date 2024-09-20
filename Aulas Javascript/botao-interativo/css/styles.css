@@ -1,0 +1,61 @@
+/* Resetar a página */
+* {
+    margin: 0; /* Zera a margem */
+    padding: 0; /* Zera o espaçamento dos itens */
+}
+/* Define o estilo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a Fonte */ 
+    background-color: #f0f0f0; /* Define uma cor fundo */
+    display: flex; /* Escolha de Display Flexível */
+    justify-content: center; /* Modelo do Display */
+    align-items: center; /* Alinhamento dos Itens */
+    height: 100vh; /* Define a altura do corpo do site */
+    margin: 0; /* Não irá inserir margem */
+}
+/* Centraliza os elementos na tela */
+.container {
+    text-align: center; /* Alinhamento do texto no container */
+    background-color: rgb(178, 238, 231); /* Cor do fundo do conteiner */
+    padding: 30px; /* Espaçamento dos itens-borda */
+    border-radius: 10px; /* Arredonda as borda do conteiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efeito de sombreamento */
+}
+/* Estilos dos botão um */
+.botao-um {
+    margin: 10px; /* Distância da margem */
+    padding: 10px 20px; /* Espaçamento entre os itens internos */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Estilo do cursor do mouse será uma "mãozinha" */
+    border: none; /* Borda */
+    border-radius: 5px; /* Arrendondamento das arestas do botão */
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    transition: all 0.3s ease; /* Efeito de transição de cor será feito em todo o botão em 0.3 segundo de forma suave */
+}
+/* Quando o botão for clicado, ele muda de cor */
+.botao-um:active {
+    background-color: #0b4016; /* Cor do botão ao ser clicado */
+}
+.botao-dois {
+    margin: 10px; /* Distância da margem */
+    padding: 10px 20px; /* Espaçamento entre os itens internos */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Estilo do cursor do mouse será uma "mãozinha" */
+    border: none; /* Borda */
+    border-radius: 5px; /* Arrendondamento das arestas do botão */
+    background-color: #ff2020; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    transition: all 0.3s ease; /* Efeito de transição de cor será feito em todo o botão em 0.3 segundo de forma suave */
+}
+/* Quando o botão for clicado, ele muda de cor */
+.botao-dois:active {
+    background-color: #8a0000; /* Cor do botão ao ser clicado */
+}
+/* Oculta a mensagem de erro inicialmente */
+.oculto {
+    display: none; /* Não inserimos no Display, será chamado pelo JS */
+    color: red; /* Cor do texto */
+    font-size: 18px; /* Tamanho do texto */
+    margin-top: 10px; /* Distância da margem acima */
+}

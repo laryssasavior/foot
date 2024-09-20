@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos às compras?</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vamos às compras?</h1>
+        <!-- Formulário para inserir o nome e o valor do produto -->
+        <div class="formulario">
+            <input type="text" id="produto" placeholder="Nome do produto" />
+            <input type="number" id="valor" placeholder="Valor do produto (R$)" />
+        </div>
+        <!-- Botão para Inserir Produto -->
+        <button id="adicionar">Inserir Produto</button>
+        <!-- Botão para visualizar a tabela -->
+        <button id="visualizarTabela">Visualizar Tabela</button>
+        <!-- Tabela que será gerada dinamicamente -->
+        <table id="tabelaProdutos" class="oculto">
+            <thead> <!-- Abertura do Cabeçalho -->
+                <tr> <!-- Inserir uma linha na tabela -->
+                    <th>Produto</th> <!-- Cabeçalho da tabela, coluna um -->
+                    <th>Valor (R$)</th> <!-- Cabeçalho da tabela, coluna dois -->
+                </tr> <!-- Conclusão da linha -->
+            </thead> <!-- Fechamento do cabeçalho da tabela -->
+            <tbody> <!-- Início do corpo da tabela -->
+                <!-- As linhas de produtos serão inseridas aqui -->
+            </tbody> <!-- Fechamento do corpo da tabela -->
+            <tfoot> <!-- Início do rodapé da tabela -->
+                <tr> <!-- Abertura de uma linha -->
+                    <td>Total:</td> <!-- Inseri uma célula -->
+                    <td id="total">R$ 0,00</td> <!-- Inseri uma célula -->
+                </tr> 
+            </tfoot> <!-- Fechamento do rodapé da tabela-->
+        </table>
+    </div>
+    <!-- Javascript -->
+    <script src="js/script.js"></script> 
+</body>
+</html>

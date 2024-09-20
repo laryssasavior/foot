@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console e Window</title>
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Olá mundo!</h1>
+    <p>Vencemos o início.</p>
+    <!-- Javascript -->
+    <script>
+        // O window.alert() exibe uma caixa de diálogo simples com uma mensagem e um botão "OK".
+        window.alert("Vamos começar o desespero!");
+        // O window.prompt() solicita uma entrada de dados do usuário, exibindo uma caixa de texto.
+        let nome = window.prompt("Qual é o seu nome?");
+        // Inserida uma váriavel let (valor alterável)
+        console.log("Nome informado: " + nome);
+        // O window.setTimeout() executa uma função após um intervalo de tempo definido (em milissegundos).
+        window.setTimeout(function() {
+            console.log("Executando após 2 segundos");
+        }, 2000); // 2000 milissegundos = 2 segundos
+        // 
+        window.confirm("Estão entendendo?");
+        /* O window.open() abre uma nova janela ou aba com o URL especificado.
+        window.open("https://www.google.com", "_blank");
+        // Ele irá fechar a janela atual
+        window.close() */
+        window.setInterval(function () {
+            window.clearInterval(intervalID)
+        });
+        // Manipulação do scroll
+        window.scroll(x, y);        
+        // Volta para a página anterior no histórico
+        window.history.back();
+        // Página seguinte
+        window.history.forward();
+        // XY páginas a frente
+        window.history.go(2); // Determinado duas a frente
+        // Redireciona para outro site
+        window.location.href = "https://www.wikipedia.org";  
+    </script>
+</body>
+</html>

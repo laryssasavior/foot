@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif; /* Fonte */
+    background-color: #f4f4f4; /* Cor de fundo */
+    display: flex; /* Display Flexível */
+    justify-content: center; /* Modelo do display */
+    align-items: center; /* Alinhamento dos itens */
+    height: 100vh; /* Altura */
+    margin: 0; /* Margem */
+}
+.calculator-box {
+    background-color: #fff; /* Cor de fundo */
+    padding: 20px; /* Espaçamento entre os itens */
+    border-radius: 10px; /* Borda arrendondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+    width: 300px; /* Largura */
+    text-align: center; /* Alinhamento do Texto */
+}
+button {
+    padding: 10px; /* Espaçamento entre o item (espessura do botão) */
+    margin: 5px; /* Margem */
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Efeito de borda arrendondada */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Ponteiro como uma "maozinha" */
+}
+button:hover {
+    background-color: #0056b3; /* Cor do efeito ao passar o mouse */
+}

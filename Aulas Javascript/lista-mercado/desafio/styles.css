@@ -1,0 +1,139 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal com sombra no centro da página */
+.container {
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Formulário de entrada de produtos */
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 48%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin: 10px;
+}
+
+input:focus {
+    border-color: #007BFF;
+}
+
+/* Estilos dos botões */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabela de produtos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead th {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    color: #333;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+tfoot td#total {
+    text-align: right;
+}
+
+/* Botão de remoção */
+button.remover {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.remover:hover {
+    background-color: #cc0000;
+}
+
+/* Botão de impressão */
+#imprimirTabela {
+    margin-top: 20px;
+    background-color: #28a745;
+}
+
+#imprimirTabela:hover {
+    background-color: #218838;
+}
+
+/* Ocultar tabela antes de exibir */
+.oculto {
+    display: none;
+}

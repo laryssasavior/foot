@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vamos às compras?</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Vamos às compras?</h1>
+    <div class="formulario">
+        <input type="text" id="produto" placeholder="Nome do produto" />
+        <input type="number" id="valor" placeholder="Valor do produto (R$)" />
+    </div>
+
+    <button id="adicionar">Inserir Produto</button>
+    <button id="visualizarTabela">Visualizar Tabela</button>
+    
+    <table id="tabelaProdutos" class="oculto">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Valor (R$)</th>
+                <!-- Ação de Remoção -->
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Itens adicionados aparecerão aqui -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td id="total">R$ 0,00</td>
+                <td></td> <!-- Ação remoção -->
+            </tr>
+        </tfoot>
+    </table>
+    <!-- Inserção do botão de Impressão -->
+    <button id="imprimirTabela">Imprimir Tabela</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
